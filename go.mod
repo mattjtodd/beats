@@ -47,7 +47,7 @@ require (
 	github.com/denisenkom/go-mssqldb v0.0.0-20181014144952-4e0d7dc8888f
 	github.com/digitalocean/go-libvirt v0.0.0-20190715144809-7b622097a793
 	github.com/dimchansky/utfbom v1.1.0 // indirect
-	github.com/dlclark/regexp2 v1.2.0 // indirect
+	github.com/dlclark/regexp2 v0.0.0-20171009020623-7632a260cbaf
 	github.com/docker/distribution v2.7.1+incompatible // indirect
 	github.com/docker/docker v1.4.2-0.20190822205725-ed20165a37b4
 	github.com/docker/go-connections v0.4.0
@@ -93,6 +93,7 @@ require (
 	github.com/magefile/mage v1.9.0
 	github.com/mattn/go-colorable v0.1.4
 	github.com/miekg/dns v1.1.16
+	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/hashstructure v1.0.0
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/morikuni/aec v1.0.0 // indirect
@@ -103,13 +104,14 @@ require (
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4
 	github.com/prometheus/common v0.7.0
-	github.com/prometheus/procfs v0.0.5
+	github.com/prometheus/procfs v0.0.2
 	github.com/rcrowley/go-metrics v0.0.0-20190826022208-cac0b30c2563
-	github.com/samuel/go-thrift v0.0.0-20190219015601-e8b6b52668fe
+	github.com/samuel/go-parser v0.0.0-20170131185712-99744db8e45c // indirect
+	github.com/samuel/go-thrift v0.0.0-20140522043831-2187045faa54
 	github.com/sanathkr/yaml v1.0.0 // indirect
 	github.com/shirou/gopsutil v2.19.9+incompatible
 	github.com/sirkon/goproxy v1.4.8
-	github.com/spf13/cobra v0.0.5
+	github.com/spf13/cobra v0.0.0-20171123071330-1be1d2841c77
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.4.0
 	github.com/theckman/go-flock v0.7.1
@@ -129,12 +131,12 @@ require (
 	golang.org/x/text v0.3.2
 	golang.org/x/time v0.0.0-20191024005414-555d28b269f0
 	golang.org/x/tools v0.0.0-20191030062658-86caa796c7ab
-	google.golang.org/api v0.13.0
-	google.golang.org/grpc v1.24.0
+	google.golang.org/api v0.7.0
+	google.golang.org/grpc v1.21.1
 	gopkg.in/goracle.v2 v2.0.0-20190530184054-3222d7159b45
 	gopkg.in/inf.v0 v0.9.1
-	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
-	gopkg.in/yaml.v2 v2.2.4
+	gopkg.in/mgo.v2 v2.0.0-20160818020120-3f83fa500528
+	gopkg.in/yaml.v2 v2.2.2
 	gotest.tools v2.2.0+incompatible // indirect
 	howett.net/plist v0.0.0-20181124034731-591f970eefbb
 	k8s.io/api v0.0.0-20190722141453-b90922c02518
