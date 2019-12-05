@@ -3,10 +3,10 @@
 	"ignore": "test tools",
 	"package": [
 		{
-			"checksumSHA1": "HQMYtd0TnYGOJZxKxODjBy+OyVw=",
+			"checksumSHA1": "t8sxwHzlQMv8HU0L091X2+trQJQ=",
 			"path": "4d63.com/tz",
-			"revision": "acbe7ac603850b02c7bc4329a2354e389857bf18",
-			"revisionTime": "2019-08-31T23:37:02Z"
+			"revision": "6d37baae851b6f07225308b199322f70907aa3dd",
+			"revisionTime": "2019-11-24T06:07:01Z"
 		},
 		{
 			"checksumSHA1": "NkpNQgmrdzGr9HUDL8Bp5YAxt0k=",
@@ -835,12 +835,10 @@
 			"versionExact": "v20"
 		},
 		{
-			"checksumSHA1": "cEszpxh1szqTb440ze4hm/Vfm40=",
+			"checksumSHA1": "kDSYVipifs9K6CgxXLIfHrGh8wA=",
 			"path": "github.com/coreos/go-systemd/sdjournal",
-			"revision": "9002847aa1425fb6ac49077c0a630b3b67e0fbfd",
-			"revisionTime": "2018-10-31T08:50:51Z",
-			"version": "v18",
-			"versionExact": "v18"
+			"revision": "fd7a80b32e1fc73e890fde45604ed5009dc817a3",
+			"revisionTime": "2019-07-19T11:48:52Z"
 		},
 		{
 			"checksumSHA1": "nwll5KjH9SKrWxB45OmN09wdipI=",
