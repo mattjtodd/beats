@@ -114,6 +114,9 @@ func main() {
 							revTime = strings.ReplaceAll(revTime, ":", "")
 							rev := entry.Revision[:12]
 							fmt.Printf("%s-%s\n", revTime, rev)
+							if entry.VersionExact != "" {
+								fmt.Println(entry.VersionExact)
+							}
 							break
 						}
 					}
