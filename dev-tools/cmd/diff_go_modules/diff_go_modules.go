@@ -102,10 +102,10 @@ func main() {
 
 				res := bytes.Compare(vendoredContents, modulesContents)
 				if res != 0 {
-					fmt.Println("MODULE", pathInCache)
-					fmt.Println("Vendored:", vendoredPath)
-					fmt.Println("go modules:", fullPath)
-					fmt.Println("different files")
+					//fmt.Println("MODULE", pathInCache)
+					//fmt.Println("Vendored:", vendoredPath)
+					//fmt.Println("go modules:", fullPath)
+					//fmt.Println("different files")
 					for _, entry := range vendorFile.Package {
 						if strings.HasPrefix(entry.Path, pathInCache) {
 							revTime := strings.ReplaceAll(entry.RevisionTime, "-", "")
@@ -113,14 +113,14 @@ func main() {
 							revTime = strings.ReplaceAll(revTime, "T", "")
 							revTime = strings.ReplaceAll(revTime, ":", "")
 							rev := entry.Revision[:12]
-							fmt.Printf("%s-%s\n", revTime, rev)
-							if entry.VersionExact != "" {
-								fmt.Println(entry.VersionExact)
-							}
+							fmt.Printf("%s => %s v0.0.0-%s-%s\n", pathInCache, pathInCache, revTime, rev)
+							//if entry.VersionExact != "" {
+							//	fmt.Println(entry.VersionExact)
+							//}
 							break
 						}
 					}
-					fmt.Println("---------")
+					//fmt.Println("---------")
 					ret = 1
 					return nil
 				}

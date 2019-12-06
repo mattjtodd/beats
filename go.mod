@@ -52,7 +52,6 @@ require (
 	github.com/fsnotify/fsevents v0.0.0-20181029231046-e1d381a4d270
 	github.com/fsnotify/fsnotify v1.4.7
 	github.com/garyburd/redigo v0.0.0-20160525165706-b8dc90050f24
-	github.com/go-kit/kit v0.9.0 // indirect
 	github.com/go-ole/go-ole v0.0.0-20190920104607-14974a1cf647 // indirect
 	github.com/go-sourcemap/sourcemap v2.1.2+incompatible // indirect
 	github.com/go-sql-driver/mysql v1.4.1
@@ -76,7 +75,6 @@ require (
 	github.com/magefile/mage v1.9.0
 	github.com/mattn/go-colorable v0.1.4
 	github.com/mattn/go-isatty v0.0.10 // indirect
-	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
 	github.com/miekg/dns v1.1.15
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/hashstructure v1.0.0
@@ -87,7 +85,7 @@ require (
 	github.com/pkg/errors v0.8.1
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4
-	github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+	github.com/prometheus/common v0.4.1
 	github.com/prometheus/procfs v0.0.2
 	github.com/rcrowley/go-metrics v0.0.0-20190826022208-cac0b30c2563
 	github.com/samuel/go-parser v0.0.0-20170131185712-99744db8e45c // indirect
@@ -95,10 +93,8 @@ require (
 	github.com/sanathkr/yaml v1.0.0 // indirect
 	github.com/shirou/gopsutil v2.19.9+incompatible
 	github.com/sirkon/goproxy v1.4.8
-	github.com/sirupsen/logrus v1.0.6 // indirect
 	github.com/spf13/cobra v0.0.0-20171123071330-1be1d2841c77
 	github.com/spf13/pflag v1.0.5
-	github.com/stretchr/objx v0.1.1 // indirect
 	github.com/stretchr/testify v1.4.0
 	github.com/theckman/go-flock v0.7.1
 	github.com/tsg/gopacket v0.0.0-20190320122513-dd3d0e41124a
@@ -165,12 +161,37 @@ replace (
 	github.com/opencontainers/go-digest => github.com/opencontainers/go-digest v0.0.0-20170510163354-eaa60544f31c
 	github.com/opencontainers/image-spec => github.com/opencontainers/image-spec v0.0.0-20170525204040-4038d4391fe9
 	github.com/pkg/errors => github.com/pkg/errors v0.0.0-20170316201538-ff09b135c25a
+	github.com/prometheus/common => github.com/prometheus/common v0.0.0-20190730175846-637d7c34db12
 	github.com/prometheus/procfs => github.com/prometheus/procfs v0.0.0-20180310141954-54d17b57dd7d
 	github.com/rcrowley/go-metrics => github.com/rcrowley/go-metrics v0.0.0-20181016184325-3113b8401b8a
+	github.com/sanathkr/yaml => github.com/sanathkr/yaml v0.0.0-20170819201035-0056894fa522
 	github.com/shirou/gopsutil => github.com/shirou/gopsutil v2.18.11+incompatible
+	github.com/sirupsen/logrus => github.com/sirupsen/logrus v0.0.0-20190331131941-a6c0064cfaf9
+	github.com/spf13/pflag => github.com/spf13/pflag v0.0.0-20170508184408-e57e3eeb33f7
+	github.com/stretchr/objx => github.com/stretchr/objx v0.0.0-20180702103455-b8b73a35e983
+	github.com/stretchr/testify => github.com/stretchr/testify v0.0.0-20180609115518-f35b8ab0b5a2
+	github.com/theckman/go-flock => github.com/theckman/go-flock v0.0.0-20180124011928-b139a2487364
 	github.com/vmware/govmomi => github.com/vmware/govmomi v0.0.0-20170802214208-2cad15190b41
+	github.com/yuin/gopher-lua => github.com/yuin/gopher-lua v0.0.0-20170403160031-b402f3114ec7
+	go.uber.org/atomic => go.uber.org/atomic v0.0.0-20171114204401-8474b86a5a6f
+	go.uber.org/multierr => go.uber.org/multierr v0.0.0-20170829224307-fb7d312c2c04
+	go.uber.org/zap => go.uber.org/zap v0.0.0-20170925195302-35aad584952c
+	golang.org/x/crypto => golang.org/x/crypto v0.0.0-20181025113841-85e1b3f9139a
+	golang.org/x/net => golang.org/x/net v0.0.0-20180120141536-44b7c21cbf19
 	golang.org/x/net/publicsuffix => golang.org/x/net/publicsuffix v0.0.0-20180120141536-44b7c21cbf19
+	golang.org/x/oauth2 => golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
+	golang.org/x/sys => golang.org/x/sys v0.0.0-20181025063200-d989b31c8746
+	golang.org/x/text => golang.org/x/text v0.0.0-20180208041248-4e4a3210bb54
+	golang.org/x/time => golang.org/x/time v0.0.0-20180314180208-26559e0f760e
+	golang.org/x/tools => golang.org/x/tools v0.0.0-20180826164753-156d532d4f67
+	google.golang.org/api => google.golang.org/api v0.0.0-20190624191751-02490b97dff7
+	google.golang.org/genproto => google.golang.org/genproto v0.0.0-20190611190212-a7e196e89fd3
+	gopkg.in/goracle.v2 => gopkg.in/goracle.v2 v2.0.0-20190530184054-3222d7159b45
+	gopkg.in/inf.v0 => gopkg.in/inf.v0 v0.0.0-20150911125757-3887ee99ecf0
+	gopkg.in/yaml.v2 => gopkg.in/yaml.v2 v2.0.0-20180328195020-5420a8b6744d
+	howett.net/plist => howett.net/plist v0.0.0-20171105004507-233df3c4f07b
 	k8s.io/api => k8s.io/api v0.0.0-20190722141453-b90922c02518
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20190719140911-bfcf53abc9f8
 	k8s.io/client-go => k8s.io/client-go v12.0.0+incompatible
 
 )
