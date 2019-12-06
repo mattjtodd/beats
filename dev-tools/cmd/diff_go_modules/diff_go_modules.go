@@ -157,7 +157,7 @@ func vendorJSON() (*vendorPackage, error) {
 func openFileForDiffing(path string) ([]byte, error) {
 	contents, err := ioutil.ReadFile(path)
 	if err != nil {
-		return nil, fmt.Errorf("error while reading from file", path, err)
+		return nil, fmt.Errorf("error while reading from file %s %v", path, err)
 	}
 	return contents, nil
 }
