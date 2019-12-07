@@ -11,7 +11,7 @@ Third party libraries used by the Elastic Beats project:
 
 --------------------------------------------------------------------
 Dependency: 4d63.com/tz
-Revision: acbe7ac603850b02c7bc4329a2354e389857bf18
+Revision: 6d37baae851b6f07225308b199322f70907aa3dd
 License type (autodetected): MIT
 ./vendor/4d63.com/tz/LICENSE:
 --------------------------------------------------------------------
@@ -251,7 +251,7 @@ Copyright 2011-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
 --------------------------------------------------------------------
 Dependency: github.com/Azure/azure-sdk-for-go
-Revision: 7a9d2769e4a581b0b1bc609c71b59af043e05c98
+Revision: a629ae7873bf2a86184a8bc1b65e65e1ab532f57
 License type (autodetected): Apache-2.0
 ./vendor/github.com/Azure/azure-sdk-for-go/LICENSE:
 --------------------------------------------------------------------
