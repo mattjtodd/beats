@@ -21,6 +21,174 @@
 			"revisionTime": "2017-01-17T14:01:51Z"
 		},
 		{
+			"checksumSHA1": "zZD7VByLVjlzbc43RHvFDAGI75o=",
+			"path": "github.com/sirkon/goproxy/gomod",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "HZNUV4cBSY718gNQstxUkgTmUiI=",
+			"path": "github.com/sirkon/goproxy/internal/base",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "LWU5ZhGXqkBZu+Ay2UjuSCn6sw8=",
+			"path": "github.com/sirkon/goproxy/internal/browser",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "KhFIEKwQ4rCjszryd//+AOwBtmc=",
+			"path": "github.com/sirkon/goproxy/internal/buildid",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "4KZWVBaX1f6fLwCJT07jh0V8PqU=",
+			"path": "github.com/sirkon/goproxy/internal/cache",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "jp4WLCz1W6gGGkT0cMxZDxO5VeQ=",
+			"path": "github.com/sirkon/goproxy/internal/cfg",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "4iQbGhUrzuWMX8aBZKmi3GKzW14=",
+			"path": "github.com/sirkon/goproxy/internal/dirhash",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "jSMclA8ONH2M2HrpR6hgINPHF9c=",
+			"path": "github.com/sirkon/goproxy/internal/errors",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "+Rb3GLQhdC3sOwm6WoSo7C6+KbY=",
+			"path": "github.com/sirkon/goproxy/internal/get",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "39ZbY3BamlhSSvPZ9YIhiZCmguE=",
+			"path": "github.com/sirkon/goproxy/internal/imports",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "HDJLYGNd9wDvStFYuNMaFs1ais8=",
+			"path": "github.com/sirkon/goproxy/internal/load",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "swz7h/eS2A1r7gQnMFIhmMCaLnA=",
+			"path": "github.com/sirkon/goproxy/internal/modconv",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "wYrVt1rpJbBdk802Ux86vmQYG9I=",
+			"path": "github.com/sirkon/goproxy/internal/modfetch",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "4hK/TbhvWIcr6//biI6cObHE9j4=",
+			"path": "github.com/sirkon/goproxy/internal/modfetch/codehost",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "mvabG2IkDxbmaqX8FhxM6xfy6Hw=",
+			"path": "github.com/sirkon/goproxy/internal/modfile",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "ngYSejpqKE5c36vmMu/bLm36WRU=",
+			"path": "github.com/sirkon/goproxy/internal/modinfo",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "gxujFm0Yx0xugm8Z+YDsOAaKYSQ=",
+			"path": "github.com/sirkon/goproxy/internal/modload",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "SjHNvQvdPOOxJbGQl13REfZnPpQ=",
+			"path": "github.com/sirkon/goproxy/internal/module",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "vOGhop3OY6ZJZqcU2e/5fewJrV4=",
+			"path": "github.com/sirkon/goproxy/internal/mvs",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "PMk0vK85/nl1M9t7wZf76vRep80=",
+			"path": "github.com/sirkon/goproxy/internal/objabi",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "OC4hjIHv9ZnL4YPrueeOFvJdiow=",
+			"path": "github.com/sirkon/goproxy/internal/par",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "Mb//OL5risQBU/eLaXX6Y7xP+fk=",
+			"path": "github.com/sirkon/goproxy/internal/search",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "ShvwP5X6wZOM0238ylCCMKaWuFw=",
+			"path": "github.com/sirkon/goproxy/internal/semver",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "gpG8qgEWPXyKRVaVRC42spXdBtc=",
+			"path": "github.com/sirkon/goproxy/internal/singleflight",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "Wajz2IGeOP5tDeNxnqDRL9lZd7k=",
+			"path": "github.com/sirkon/goproxy/internal/str",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "lCKsQLPrs5AMSugvy0RH/IxcfUU=",
+			"path": "github.com/sirkon/goproxy/internal/web",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "4mlAknT1p1EjhUNgc0cB1kjkUZ4=",
+			"path": "github.com/sirkon/goproxy/internal/web2",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
+			"checksumSHA1": "x+E6WJEQsbKARNKqkIUz/RAKBZs=",
+			"path": "github.com/sirkon/goproxy/internal/work",
+			"revision": "4b3c117785e34f890fa77b1f2895f4bf992e5984",
+			"revisionTime": "2019-09-15T08:46:36Z"
+		},
+		{
 			"checksumSHA1": "nlhGP9VLnwbYrykVzBdJMppDrFs=",
 			"path": "github.com/tsg/go-daemon",
 			"revision": "c6e0d1a849861166320520e9bae9bbda5f2ecb03",
