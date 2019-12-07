@@ -49,6 +49,16 @@ var (
 	goModPath        = filepath.Join(beatsPath, "go.mod")
 )
 
+// This script compares files of dependencies under vendor and go modules cache.
+// If it finds a different file, it prints a replace directive to stdout. The directive
+// has to be copied into the replace section of go.mod.
+// Timestamps might not match the one in go modules. In this case, fix it by hand.
+// Generated major versions also need adjustments if those are bigger then 0 in the import.
+//
+// Enhancements:
+// - checking if the timestamp is correct
+// - automatically adding lines to go.mod
+// - configurable paths
 func main() {
 	ret := 0
 
@@ -58,13 +68,13 @@ func main() {
 
 	m, err := goModulesFile()
 	if err != nil {
-		fmt.Println(err)
+		fmt.Fprintf(os.Stderr, "cannot go.mod: %+v", err)
 		os.Exit(1)
 	}
 
 	vendorFile, err := vendorJSON()
 	if err != nil {
-		fmt.Println(err)
+		fmt.Fprintf(os.Stderr, "cannot open vendor/vendor.json: %+v", err)
 		os.Exit(1)
 	}
 
@@ -91,21 +101,17 @@ func main() {
 
 				vendoredContents, err := openFileForDiffing(vendoredPath)
 				if err != nil {
-					fmt.Println(err)
+					fmt.Fprintf(os.Stderr, "cannot open vendored file: %+v", err)
 					return err
 				}
 				modulesContents, err := openFileForDiffing(fullPath)
 				if err != nil {
-					fmt.Println(err)
+					fmt.Fprintf(os.Stderr, "cannot open go modules file: %+v", err)
 					return err
 				}
 
 				res := bytes.Compare(vendoredContents, modulesContents)
 				if res != 0 {
-					//fmt.Println("MODULE", pathInCache)
-					//fmt.Println("Vendored:", vendoredPath)
-					//fmt.Println("go modules:", fullPath)
-					//fmt.Println("different files")
 					for _, entry := range vendorFile.Package {
 						if strings.HasPrefix(entry.Path, pathInCache) {
 							revTime := strings.ReplaceAll(entry.RevisionTime, "-", "")
@@ -114,13 +120,9 @@ func main() {
 							revTime = strings.ReplaceAll(revTime, ":", "")
 							rev := entry.Revision[:12]
 							fmt.Printf("%s => %s v0.0.0-%s-%s\n", pathInCache, pathInCache, revTime, rev)
-							//if entry.VersionExact != "" {
-							//	fmt.Println(entry.VersionExact)
-							//}
 							break
 						}
 					}
-					//fmt.Println("---------")
 					ret = 1
 					return nil
 				}

@@ -5,10 +5,14 @@ go 1.13
 require (
 	4d63.com/tz v0.0.0-20191124060701-6d37baae851b
 	cloud.google.com/go v0.38.0
-	github.com/Azure/azure-sdk-for-go v35.0.0+incompatible
+	github.com/Azure/azure-sdk-for-go v0.0.0-20190805171550-a629ae7873bf
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
 	github.com/Azure/go-autorest v11.1.2+incompatible
-	github.com/Azure/go-autorest/tracing v0.5.0 // indirect
+	github.com/Azure/go-autorest/autorest v0.9.3 // indirect
+	github.com/Azure/go-autorest/autorest/azure/auth v0.4.1
+	github.com/Azure/go-autorest/autorest/date v0.2.0
+	github.com/Azure/go-autorest/autorest/to v0.3.0 // indirect
+	github.com/Azure/go-autorest/autorest/validation v0.2.0 // indirect
 	github.com/Microsoft/go-winio v0.4.12
 	github.com/Shopify/sarama v0.0.0-00010101000000-000000000000
 	github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d
@@ -28,7 +32,6 @@ require (
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f
 	github.com/denisenkom/go-mssqldb v0.0.0-20181014144952-4e0d7dc8888f
 	github.com/digitalocean/go-libvirt v0.0.0-20190715144809-7b622097a793
-	github.com/dimchansky/utfbom v1.1.0 // indirect
 	github.com/dlclark/regexp2 v0.0.0-20171009020623-7632a260cbaf // indirect
 	github.com/docker/distribution v2.7.1+incompatible // indirect
 	github.com/docker/docker v1.4.2-0.20190822205725-ed20165a37b4
@@ -57,7 +60,6 @@ require (
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/gocarina/gocsv v0.0.0-20170324095351-ffef3ffc77be
 	github.com/godbus/dbus v0.0.0-00010101000000-000000000000 // indirect
-	github.com/gofrs/flock v0.7.1 // indirect
 	github.com/gofrs/uuid v3.1.0+incompatible
 	github.com/golang/protobuf v1.3.2
 	github.com/golang/snappy v0.0.1
@@ -67,7 +69,7 @@ require (
 	github.com/gorhill/cronexpr v0.0.0-20161205141322-d520615e531a
 	github.com/gorilla/mux v1.7.3 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
-	github.com/insomniacslk/dhcp v0.0.0-20191025184527-fe3f5c4e2b53
+	github.com/insomniacslk/dhcp v0.0.0-20180716145214-633285ba52b2
 	github.com/joeshaw/multierror v0.0.0-20140124173710-69b34d4ec901
 	github.com/jstemmer/go-junit-report v0.9.1
 	github.com/klauspost/cpuid v1.2.1 // indirect
@@ -76,7 +78,6 @@ require (
 	github.com/mattn/go-colorable v0.1.4
 	github.com/mattn/go-isatty v0.0.10 // indirect
 	github.com/miekg/dns v1.1.15
-	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/hashstructure v1.0.0
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/morikuni/aec v1.0.0 // indirect
@@ -103,7 +104,7 @@ require (
 	go.uber.org/atomic v1.4.0
 	go.uber.org/multierr v1.2.0
 	go.uber.org/zap v1.11.0
-	golang.org/x/crypto v0.0.0-20191205180655-e7c4368fe9dd
+	golang.org/x/crypto v0.0.0-20191206172530-e9b2fee46413
 	golang.org/x/net v0.0.0-20191004110552-13f9640d40b9
 	golang.org/x/oauth2 v0.0.0-20191202225959-858c2ad4c8b6 // indirect
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
@@ -113,8 +114,6 @@ require (
 	golang.org/x/tools v0.0.0-20190506145303-2d16b83fe98c
 	google.golang.org/api v0.14.0
 	google.golang.org/genproto v0.0.0-20191205163323-51378566eb59 // indirect
-	gopkg.in/airbrake/gobrake.v2 v2.0.9 // indirect
-	gopkg.in/gemnasium/logrus-airbrake-hook.v2 v2.1.2 // indirect
 	gopkg.in/goracle.v2 v2.0.0-20190530184054-3222d7159b45
 	gopkg.in/inf.v0 v0.9.1
 	gopkg.in/mgo.v2 v2.0.0-20160818020120-3f83fa500528
@@ -130,6 +129,7 @@ replace (
 	4d63.com/tz => 4d63.com/tz v0.0.0-20191124060701-6d37baae851b
 	cloud.google.com/go => cloud.google.com/go v0.40.0
 	github.com/Azure/azure-sdk-for-go => github.com/azure/azure-sdk-for-go v0.0.0-20190805171550-a629ae7873bf
+	github.com/Azure/go-autorest => github.com/Azure/go-autorest v0.0.0-20190801152139-ba1147dc57f9
 	github.com/Shopify/sarama => github.com/elastic/sarama v0.0.0-20191122160421-355d120d0970
 	github.com/aws/aws-sdk-go-v2 => github.com/aws/aws-sdk-go-v2 v0.0.0-20190528215127-098e15df3044
 	github.com/awslabs/goformation => github.com/ph/goformation v0.0.0-20181029154158-c5f655c41370
@@ -141,7 +141,6 @@ replace (
 	github.com/docker/go-connections => github.com/docker/go-connections v0.0.0-20170623203643-3ede32e2033d
 	github.com/docker/go-units => github.com/docker/go-units v0.0.0-20170127095129-0dadbb0345b3
 	github.com/dop251/goja => github.com/andrewkroh/goja v0.0.0-20190128172624-dd2ac4456e20
-	github.com/elastic/go-perf => github.com/michalpristas/go-perf v0.0.0-20191031073750-9e95cbdc2071
 	github.com/elastic/go-sysinfo => github.com/elastic/go-sysinfo v0.0.0-20190822164440-51d9d1362d77
 	github.com/fsnotify/fsevents => github.com/elastic/fsevents v0.0.0-20181029231046-e1d381a4d270
 	github.com/fsnotify/fsnotify => github.com/adriansr/fsnotify v0.0.0-20180417234312-c9bbe1f46f1d
@@ -180,7 +179,7 @@ replace (
 	golang.org/x/net => golang.org/x/net v0.0.0-20180120141536-44b7c21cbf19
 	golang.org/x/net/publicsuffix => golang.org/x/net/publicsuffix v0.0.0-20180120141536-44b7c21cbf19
 	golang.org/x/oauth2 => golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
-	golang.org/x/sys => golang.org/x/sys v0.0.0-20181025063200-d989b31c8746
+	golang.org/x/sys => golang.org/x/sys v0.0.0-20190712062909-fae7ac547cb7
 	golang.org/x/text => golang.org/x/text v0.0.0-20180208041248-4e4a3210bb54
 	golang.org/x/time => golang.org/x/time v0.0.0-20180314180208-26559e0f760e
 	golang.org/x/tools => golang.org/x/tools v0.0.0-20180826164753-156d532d4f67
