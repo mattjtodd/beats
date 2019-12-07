@@ -12,6 +12,7 @@ REVIEWDOG=reviewdog
 REVIEWDOG_OPTIONS?=-diff "git diff master"
 REVIEWDOG_REPO=github.com/haya14busa/reviewdog/cmd/reviewdog
 XPACK_SUFFIX=x-pack/
+GOMODULES=GO111MODULE=off
 
 # PROJECTS_XPACK_PKG is a list of Beats that have independent packaging support
 # in the x-pack directory (rather than having the OSS build produce both sets
@@ -108,7 +109,7 @@ add-headers: mage
 # Corrects spelling errors
 .PHONY: misspell
 misspell:
-	go get -u github.com/client9/misspell/cmd/misspell
+	${GOMODULES} go get -u github.com/client9/misspell/cmd/misspell
 	# Ignore Kibana files (.json)
 	$(FIND) \
 		-not -path "*.json" \
@@ -124,7 +125,7 @@ fmt: add-headers python-env
 
 .PHONY: lint
 lint:
-	@go get $(GOLINT_REPO) $(REVIEWDOG_REPO)
+	${GOMODULES} @go get $(GOLINT_REPO) $(REVIEWDOG_REPO)
 	$(REVIEWDOG) $(REVIEWDOG_OPTIONS)
 
 # Builds the documents for each beat
